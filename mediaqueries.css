@@ -100,10 +100,6 @@
     font-size: 1rem;
   }
 
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-
   .logo {
     font-size: 1.5rem;
   }
@@ -143,4 +139,20 @@
   .Tools {
     width: auto !important;
   }
+  
+  #contact-form{
+  padding: 10px;
+    margin: 0;
+  }
+
+  #contact-form input {
+  width: 90%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+footer{
+  margin-top: 200px;
+}
 }

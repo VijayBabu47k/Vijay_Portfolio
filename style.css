@@ -445,12 +445,12 @@ footer p {
 }
 
 #contact-form {
-  margin-top: -50px;
+  margin-top: -150px;
   text-align: center;
 }
 
 #contact-form input {
-    width: 300px;
+  width: 300px;
   height: 30px;
   border-radius: 10px;
   border: 1px solid #ccc;
