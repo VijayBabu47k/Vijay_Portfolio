@@ -8,6 +8,12 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("YxBowvEEU5XWdvz0U"); // from EmailJS dashboard
+    })();
+  </script>
 </head>
 
 <body>
@@ -39,7 +45,7 @@
     </div>
   </nav>
   <section id="profile">
-    <div class="section__pic-container">
+    <div class="section__pic-container section__pic-container1">
       <img src="./assets/vijay.jpeg" style="border-radius:50%; object-fit: fill;" alt="Vijay Babu profile picture" />
     </div>
     <div class="section__text">
@@ -47,7 +53,7 @@
       <h1 class="title">Vijay Babu</h1>
       <p class="section__text__p2">MERN Stack Developer</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/Vijay-Resume.pdf')">
+        <button class="btn btn-color-2" onclick="">
           Download CV
         </button>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -74,7 +80,7 @@
           <div class="details-container">
             <img src="./assets/experience.png" alt="Experience icon" class="icon" />
             <h3>Experience</h3>
-            <p>2.5+ years <br />MERN Stack Development</p>
+            <p>3+ years <br />MERN Stack Development</p>
           </div>
           <div class="details-container">
             <img src="./assets/education.png" alt="Education icon" class="icon" />
@@ -84,12 +90,16 @@
         </div>
         <div class="text-container">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-            reprehenderit et laborum, rem, dolore eum quod voluptate
-            exercitationem nobis, nihil esse debitis maxime facere minus sint
-            delectus velit in eos quo officiis explicabo deleniti dignissimos.
-            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-            reiciendis ea magnam? Nulla, impedit fuga!
+            MERN Stack Developer with 3 years of experience in <b>building scalable</b> and <b>high performance</b> web
+            applications
+            using <b>Next.js, React, and Node.js</b>. Skilled in developing responsive, user friendly interfaces and
+            implementing robust backend solutions with REST APIs. Experienced in working with <b>MongoDB, PostgreSQL,
+              and
+              MySQL</b>, along with state management using <b>Redux and RTK Query</b>. Proficient in writing <b> Unit
+              Tests using Jest </b>
+            and ensuring code quality with best practices. Passionate about delivering clean, maintainable code and
+            optimizing applications for performance. Adept at collaborating in Agile teams and contributing to
+            enterprise level projects.
           </p>
         </div>
       </div>
@@ -102,19 +112,19 @@
     <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container">
-          <h2 class="experience-sub-title">MERN Stack Development</h2>
+          <h2 class="experience-sub-title">Frontend</h2>
           <div class="article-container">
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>HTML</h3>
+                <h3>HTML5</h3>
                 <p>Experienced</p>
               </div>
             </article>
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>CSS</h3>
+                <h3>CSS3</h3>
                 <p>Experienced</p>
               </div>
             </article>
@@ -129,14 +139,42 @@
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3>JavaScript</h3>
-                <p>Basic</p>
+                <p>Experienced</p>
               </div>
             </article>
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3>TypeScript</h3>
-                <p>Basic</p>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Next.js</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Redux</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tailwind CSS</h3>
+                <p>Experienced</p>
               </div>
             </article>
             <article>
@@ -146,44 +184,149 @@
                 <p>Intermediate</p>
               </div>
             </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">MERN Stack Development</h2>
-          <div class="article-container">
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>PostgreSQL</h3>
+                <h3>Prime React</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>jQuery</h3>
                 <p>Basic</p>
               </div>
             </article>
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>Node JS</h3>
+                <h3>Chart js</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node.js</h3>
                 <p>Intermediate</p>
               </div>
             </article>
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>Express JS</h3>
+                <h3>Express.js</h3>
                 <p>Intermediate</p>
               </div>
             </article>
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>Git</h3>
+                <h3>REST APIs</h3>
                 <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Basic</p>
               </div>
             </article>
           </div>
         </div>
       </div>
+      <div class="details-container Tools">
+        <h2 class="experience-sub-title">Tools & Platforms</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Git</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Bit Bucket</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Docker</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>VS Code</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Postman</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Jest</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>React Testing Library</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"/>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
   </section>
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
@@ -192,45 +335,64 @@
       <div class="about-containers">
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            <img src="./assets/project-1.svg" alt="Project 1" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
+          <h2 class="experience-sub-title project-title"> CAT - Continuous Automated Testing</h2>
+          <p>CAT retrieves results from Jenkins, manages jobs, and allows triggering builds directly. Designed with
+            Redis Streams, JWT authentication, and a scalable API architecture.</p><!-- <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
               Github
             </button>
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
               Live Demo
             </button>
-          </div>
+          </div> -->
         </div>
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            <img src="./assets/project-3.jpeg" alt="Project 2" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
-          <div class="btn-container">
+          <h2 class="experience-sub-title project-title">NCPro - Non Confirmation</h2>
+          <p>Enterprise-grade non-confirmation management platform with advanced data processing and API workflows.</p>
+          <!-- <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
               Github
             </button>
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
               Live Demo
             </button>
-          </div>
+          </div> -->
         </div>
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            <img src="./assets/project-5.png" alt="Project 1" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
+          <h2 class="experience-sub-title project-title"> SCC - Signature Chess Club</h2>
+          <p>Built a maintainable system to manage students, track schedules, and handle attendance efficiently..</p>
+          <!-- <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
               Github
             </button>
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
               Live Demo
             </button>
+          </div> -->
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-4.png" alt="Project 2" class="project-img" />
           </div>
+          <h2 class="experience-sub-title project-title">MFU - Mutual Fund Utility</h2>
+          <p>Admin dashboard for API & version management. Consumers can integrate APIs effortlessly. Built using
+            Next.js, RTK Query, and Zod validations..</p>
+          <!-- <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div> -->
         </div>
       </div>
     </div>
@@ -250,6 +412,17 @@
       </div>
     </div>
   </section>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <br>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <br>
+    <input id="email-input" name="message" placeholder="Your message..." required></input>
+    <br>
+    <button class="btn btn-color-1" type="submit" style="margin-top: 10px;">
+      Send Email
+    </button>
+  </form>
   <footer>
     <nav>
       <div class="nav-links-container">
@@ -264,6 +437,23 @@
     <p>Copyright &#169; 2025 Vijay Babu. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const form = this;
+
+      emailjs.sendForm("service_yiwkxre", "template_pnpr1tb", this)
+        .then(function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("✅ Email sent successfully!");
+          form.reset(); // ✅ Clear the form after successful submission
+        }, function (error) {
+          console.error("FAILED...", error);
+          alert("❌ Failed to send email. Check console for details.");
+        });
+    });
+  </script>
 </body>
 
 </html>
