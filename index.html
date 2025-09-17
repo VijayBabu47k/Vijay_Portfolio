@@ -2,441 +2,850 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("YxBowvEEU5XWdvz0U"); // from EmailJS dashboard
-    })();
-  </script>
+	<title>Vijay Babu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="./images/favIcon.jpg" type="image/x-icon">
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script>
+		(function () {
+			emailjs.init("YxBowvEEU5XWdvz0U"); // from EmailJS dashboard
+		})();
+	</script>
 </head>
 
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Vijay Babu</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Vijay Babu</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container section__pic-container1">
-      <img src="./assets/vijay.jpeg" style="border-radius:50%; object-fit: fill;" alt="Vijay Babu profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Vijay Babu</h1>
-      <p class="section__text__p2">MERN Stack Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://linkedin.com/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/VijayBabu47k'" />
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/Vijay.jpeg" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>3+ years <br />MERN Stack Development</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>B.C.A Bachelors Degree
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            MERN Stack Developer with 3 years of experience in <b>building scalable</b> and <b>high performance</b> web
-            applications
-            using <b>Next.js, React, and Node.js</b>. Skilled in developing responsive, user friendly interfaces and
-            implementing robust backend solutions with REST APIs. Experienced in working with <b>MongoDB, PostgreSQL,
-              and
-              MySQL</b>, along with state management using <b>Redux and RTK Query</b>. Proficient in writing <b> Unit
-              Tests using Jest </b>
-            and ensuring code quality with best practices. Passionate about delivering clean, maintainable code and
-            optimizing applications for performance. Adept at collaborating in Agile teams and contributing to
-            enterprise level projects.
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML5</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS3</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SASS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>React</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Next.js</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Redux</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Tailwind CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Material UI</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Prime React</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Bootstrap</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>jQuery</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Chart js</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-          </div>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Vijay <span style="color: var(--warning);">Babu</span></a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
 
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node.js</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Express.js</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>REST APIs</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>PostgreSQL</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MySQL</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Python</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="details-container Tools">
-        <h2 class="experience-sub-title">Tools & Platforms</h2>
-        <div class="article-container">
-          <article>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Git</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Bit Bucket</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Docker</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>VS Code</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Postman</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Jest</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>React Testing Library</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.svg" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title"> CAT - Continuous Automated Testing</h2>
-          <p>CAT retrieves results from Jenkins, manages jobs, and allows triggering builds directly. Designed with
-            Redis Streams, JWT authentication, and a scalable API architecture.</p><!-- <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button>
-          </div> -->
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.jpeg" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">NCPro - Non Confirmation</h2>
-          <p>Enterprise-grade non-confirmation management platform with advanced data processing and API workflows.</p>
-          <!-- <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button>
-          </div> -->
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-5.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title"> SCC - Signature Chess Club</h2>
-          <p>Built a maintainable system to manage students, track schedules, and handle attendance efficiently..</p>
-          <!-- <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button>
-          </div> -->
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-4.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">MFU - Mutual Fund Utility</h2>
-          <p>Admin dashboard for API & version management. Consumers can integrate APIs effortlessly. Built using
-            Next.js, RTK Query, and Zod validations..</p>
-          <!-- <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button>
-          </div> -->
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:examplemail@gmail.com">VijayBabu47k@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <form id="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <br>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <br>
-    <input id="email-input" name="message" placeholder="Your message..." required></input>
-    <br>
-    <button class="btn btn-color-1" type="submit" style="margin-top: 10px;">
-      Send Email
-    </button>
-  </form>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>Copyright &#169; 2025 Vijay Babu. All Rights Reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<!-- <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li> -->
+					<!-- <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li> -->
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero" style="min-height: 100vh; display: flex; align-items: center;">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end"
+						data-scrollax-parent="true">
+						<div class="d-none d-md-block">
+							<img src="./images/profile.jpeg"
+								style="border-radius:50%; object-fit: fill; border: 5px solid var(--warning);"
+								alt="Profile picture" />
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Vijay Babu</span></h1>
+								<h2 class="mb-4">MERN Stack Developer</h2>
+								<p>
+									<a href="#" class="btn btn-primary py-3 px-4">Download CV</a>
+									<a href="#contact-section"
+										class="btn btn-white btn-outline-white py-3 px-4">Contact</a>
+								</p>
+								<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+									<li class="ftco-animate"><a href="https://github.com/VijayBabu47k"
+											target="_blank"><span class="icon-github"></span></a></li>
+									<li class="ftco-animate"><a href="https://medium.com/@vijay47k1"
+											target="_blank"><span class="icon-medium"></span></a></li>
+									<li class="ftco-animate"><a
+											href="https://www.linkedin.com/in/vijay-b-2b710325b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+											target="_blank"><span class="icon-linkedin"></span></a></li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex">
+				<!-- <div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/bg_1.png);">
+						</div>
+					</div>
+				</div> -->
+				<div class="col-md-6 col-lg-12 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<p>
+								MERN Stack Developer with 3 years of experience in <b class="text-white">building
+									scalable</b> and <b class="text-white">high
+									performance</b> web
+								applications
+								using <b class="text-white">Next.js, React, and Node.js</b>. Skilled in developing
+								responsive, user
+								friendly interfaces and
+								implementing robust backend solutions with REST APIs. Experienced in working with
+								<b class="text-white">MongoDB, PostgreSQL, and MySQL</b>, along with state management
+								using <b class="text-white">Redux and RTK Query</b>.
+								Proficient in writing <b class="text-white"> Unit Tests using Jest </b>
+								and ensuring code quality with best practices. Passionate about delivering clean,
+								maintainable code and optimizing applications for performance.
+							</p>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Name:</span> <span>Vijay Babu</span></li>
+								<li class="d-flex"><span>Date of birth:</span> <span>October 24, 2002</span></li>
+								<li class="d-flex"><span>Address:</span> <span>No. 252 Road Street Melneathappakam,
+										Kalavai, Vellore</span></li>
+								<li class="d-flex"><span>Zip code:</span> <span>632-506</span></li>
+								<li class="d-flex"><span>Email:</span> <span>vijaybabu47k@gmail.com</span></li>
+								<li class="d-flex"><span>Phone: </span> <span>+91 6383146724</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+							<p class="mb-4">
+								<span class="number" data-number="25">0</span> +
+								<span>Project complete</span>
+							</p>
+							<p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>MERN Stack Developer with a strong foundation in computer applications and hands-on experience in
+						building real-world web applications using modern technologies.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Education -->
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2016 - 2017</span>
+						<h2>SSLC</h2>
+						<span class="position">State Board – 75%</span>
+						<p class="mt-4">Completed SSLC with a strong focus on Mathematics and Computer Science basics,
+							setting the foundation for problem-solving and logical thinking.</p>
+					</div>
+
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2017 - 2019</span>
+						<h2>HSC</h2>
+						<span class="position">State Board – 72%</span>
+						<p class="mt-4">Focused on Computer Science and Mathematics. Learned basic programming in C and
+							developed interest in software development.</p>
+					</div>
+
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2019 - 2022</span>
+						<h2>Bachelor of Computer Applications</h2>
+						<span class="position">Thiruvalluvar University - CGPA 8.4</span>
+						<p class="mt-4">Gained strong theoretical and practical knowledge in programming, databases,
+							networking, and web development. Built mini projects using Java, PHP, and MySQL.</p>
+					</div>
+				</div>
+
+				<!-- Work Experience -->
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022 - 2023 (6 Months)</span>
+						<h2>Besant Technologies</h2>
+						<span class="position">Software Developer Intern</span>
+						<p class="mt-4">Worked on frontend tasks using HTML, CSS, JavaScript. Learned the fundamentals
+							of web development, team collaboration, and version control (Git).</p>
+					</div>
+
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023 - 2024</span>
+						<h2>Foyer Technology</h2>
+						<span class="position">Software Developer</span>
+						<p class="mt-4">Worked on full-stack projects using React, Next Js, Node.js, and MongoDB. Built
+							reusable
+							components, REST APIs, and collaborated in Agile teams.</p>
+					</div>
+
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024 - Present</span>
+						<h2>ITTrident</h2>
+						<span class="position">Software Developer</span>
+						<p class="mt-4">Contributing to enterprise grade applications using the MERN stack. Responsible
+							for performance optimization, code reviews, and implementation of best practices like unit
+							testing with Jest.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Download CV -->
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section" id="services-section">
+		<div class="container">
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Services</h1>
+					<h2 class="mb-4">Services</h2>
+					<p>I offer end-to-end web development services, focusing on performance, scalability, and clean code
+						practices.</p>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Web Design -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="flaticon-analysis"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Web Design</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Full-Stack Development -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="flaticon-ideas"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Full-Stack Development</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- API Integration -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="flaticon-idea"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">API Integration</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Mobile App Development -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="flaticon-flasks"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">App Development</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Performance Optimization -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="flaticon-ux-design"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Performance Optimization</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Deployment & DevOps -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						<span class="icon">
+							<i class="flaticon-innovation"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Deployment & DevOps</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Skills</h1>
+					<h2 class="mb-4">What I Do</h2>
+					<p>Experienced in both frontend and backend development, specializing in modern web technologies and
+						creating scalable applications.</p>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Frontend Skills -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>React</h3>
+						<div class="progress">
+							<div class="progress-bar color-6" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+								aria-valuemax="100" style="width:95%">
+								<span>95%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Next.js</h3>
+						<div class="progress">
+							<div class="progress-bar color-7" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100" style="width:85%">
+								<span>85%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Redux</h3>
+						<div class="progress">
+							<div class="progress-bar color-8" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>JavaScript</h3>
+						<div class="progress">
+							<div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>TypeScript</h3>
+						<div class="progress">
+							<div class="progress-bar color-5" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+								aria-valuemax="100" style="width:75%">
+								<span>75%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Tailwind CSS</h3>
+						<div class="progress">
+							<div class="progress-bar color-9" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Backend Skills -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Node.js</h3>
+						<div class="progress">
+							<div class="progress-bar color-14" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Express.js</h3>
+						<div class="progress">
+							<div class="progress-bar color-15" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100" style="width:80%">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>MongoDB</h3>
+						<div class="progress">
+							<div class="progress-bar color-17" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100" style="width:80%">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>HTML5</h3>
+						<div class="progress">
+							<div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+								aria-valuemax="100" style="width:95%">
+								<span>95%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>CSS3</h3>
+						<div class="progress">
+							<div class="progress-bar color-2" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100" style="width:90%">
+								<span>90%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>SASS</h3>
+						<div class="progress">
+							<div class="progress-bar color-3" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Material UI</h3>
+						<div class="progress">
+							<div class="progress-bar color-10" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Prime React</h3>
+						<div class="progress">
+							<div class="progress-bar color-11" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>jQuery</h3>
+						<div class="progress">
+							<div class="progress-bar color-13" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+								aria-valuemax="100" style="width:60%">
+								<span>60%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>REST APIs</h3>
+						<div class="progress">
+							<div class="progress-bar color-16" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+								aria-valuemax="100" style="width:75%">
+								<span>75%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tools & Platforms -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Git</h3>
+						<div class="progress">
+							<div class="progress-bar color-18" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+								aria-valuemax="100" style="width:80%">
+								<span>80%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+						<h3>Docker</h3>
+						<div class="progress">
+							<div class="progress-bar color-19" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+								aria-valuemax="100" style="width:70%">
+								<span>70%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section class="ftco-section ftco-project" id="projects-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Recent Projects</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/project-3.jpeg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><b>NCPro - Non Confirmation</b></h3>
+							<p class="text-white">Enterprise grade non confirmation management platform with advanced data processing and API workflows.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/project-5.png);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><b>SCC - Signature Chess Club</b></h3>
+							<p class="text-white">Built a maintainable system to manage students, track schedules, and handle attendance efficiently.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/project-1.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><b>MFU - Mutual Fund Utility</b></h3>
+							<p class="text-white">Admin dashboard for API & version management. Consumers can integrate APIs effortlessly. Built using Next.js, RTK Query, and Zod validations.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+								style="background-image: url(images/project-2.jpg);">
+								<div class="overlay"></div>
+								<div class="text text-center p-4">
+									<h3><b>Branding &amp; Illustration Design</b></h3>
+									<p class="text-white">Web Design</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- <section class="ftco-section" id="blog-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Blog</h1>
+					<h2 class="mb-4">Our Blog</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="" class="block-20" style="background-image: url('images/image_1.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">June 21, 2019</span>
+									<a href="#" class="mr-2">Admin</a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+								</p>
+							</div>
+							<h3 class="heading"><a href="">Why Lead Generation is Key for Business Growth</a>
+							</h3>
+							<p>A small river named Duden flows by their place and supplies it with the necessary
+								regelialia.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="" class="block-20" style="background-image: url('images/image_2.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">June 21, 2019</span>
+									<a href="#" class="mr-2">Admin</a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+								</p>
+							</div>
+							<h3 class="heading"><a href="">Why Lead Generation is Key for Business Growth</a>
+							</h3>
+							<p>A small river named Duden flows by their place and supplies it with the necessary
+								regelialia.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="" class="block-20" style="background-image: url('images/image_3.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">June 21, 2019</span>
+									<a href="#" class="mr-2">Admin</a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+								</p>
+							</div>
+							<h3 class="heading"><a href="">Why Lead Generation is Key for Business Growth</a>
+							</h3>
+							<p>A small river named Duden flows by their place and supplies it with the necessary
+								regelialia.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Get in Touch</h2>
+					<p>If you have any questions or just want to say hello, feel free to reach out!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>No. 252 Road Street Melneathappakam, Kalavai, Vellore</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://1234567920">+91 6383146724</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:vijaybabu47k@gmail.com">vijaybabu47k@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Website</h3>
+						<p><a href="#">vijaybabu.site</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row no-gutters block-9">
+				<div class="col-md-12 order-md-last d-flex">
+					<form id="contact-form" action="#" class="bg-light p-4 p-md-5 contact-form"
+						style="border-radius: 20px; background: transparent !important;">
+						<div class="form-group">
+							<input type="text" name="name" class="form-control" placeholder="Your Name">
+						</div>
+						<div class="form-group">
+							<input type="text" name="email" class="form-control" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<textarea name="message" id="" cols="30" rows="7" class="form-control"
+								placeholder="Message"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+						</div>
+					</form>
+
+				</div>
+
+				<!-- <div class="col-md-6 d-flex">
+					<div class="img" style="background-image: url(images/profile2.png);"></div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">About</h2>
+						<p>MERN Stack Developer | 3+ years of experience in building scalable web apps. Passionate about
+							delivering high performance, maintainable code.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+							<!-- <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li> -->
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Services</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain
+										View, San Francisco, California, USA</span></li>
+								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
+											210</span></a></li>
+								<li><a href="#"><span class="icon icon-envelope"></span><span
+											class="text">info@yourdomain.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> <span
+							style="color: var(--warning);">Vijay Babu</span> | All rights reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		document.getElementById("contact-form").addEventListener("submit", function (e) {
+			e.preventDefault();
+
+			const form = this;
+
+			emailjs.sendForm("service_yiwkxre", "template_pnpr1tb", this)
+				.then(function (response) {
+					console.log("SUCCESS!", response.status, response.text);
+					alert("✅ Email sent successfully!");
+					form.reset();
+				}, function (error) {
+					console.error("FAILED...", error);
+					alert("❌ Failed to send email. Check console for details.");
+				});
+		});
+	</script>
 </body>
 
 </html>
