@@ -4934,6 +4934,11 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+  #home-section {
+    margin-top: -3rem !important;
+    /* same as mt-md-5 */
+  }
 }
 
 @media (min-width: 576px) {
@@ -11921,7 +11926,7 @@ h5,
 
 .ftco-navbar-light .navbar-toggler {
   border: none;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: #ffbd39 !important;
   cursor: pointer;
   padding-right: 0;
   text-transform: uppercase;
@@ -12000,7 +12005,7 @@ h5,
 
 .ftco-navbar-light.scrolled .navbar-toggler {
   border: none;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: #ffbd39 !important;
   border-color: rgba(0, 0, 0, 0.5) !important;
   cursor: pointer;
   text-transform: uppercase;
@@ -13972,7 +13977,8 @@ textarea.form-control {
 /* Base tab button style */
 #skillsTabs .nav-link {
   background: transparent;
-  color: #ffc107; /* warning color */
+  color: #ffc107;
+  /* warning color */
   border: 2px solid #ffc107;
   padding: 10px 25px;
   border-radius: 30px;
