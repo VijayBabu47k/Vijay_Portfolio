@@ -24,10 +24,27 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="./images/favIcon.jpg" type="image/x-icon">
 	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
 		(function () {
 			emailjs.init("YxBowvEEU5XWdvz0U"); // from EmailJS dashboard
 		})();
+		document.addEventListener("DOMContentLoaded", function () {
+			const tabs = document.querySelectorAll(".custom-tab");
+			const panes = document.querySelectorAll(".tab-pane");
+
+			tabs.forEach(tab => {
+				tab.addEventListener("click", () => {
+					// Remove active from all
+					tabs.forEach(t => t.classList.remove("active"));
+					panes.forEach(p => p.classList.remove("active"));
+
+					// Add to clicked tab and matching pane
+					tab.classList.add("active");
+					document.getElementById(tab.dataset.tab).classList.add("active");
+				});
+			});
+		});
 	</script>
 </head>
 
@@ -133,7 +150,7 @@
 					<div class="counter-wrap ftco-animate d-flex mt-md-3">
 						<div class="text">
 							<p class="mb-4">
-								<span class="number" data-number="25">0</span> +
+								<span class="number" data-number="12">0</span> +
 								<span>Project complete</span>
 							</p>
 							<p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
@@ -221,6 +238,22 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="flex justify-content-center text-center my-5">
+		<h2 class="mb-4"><span class="icon">
+				<i class="flaticon-idea"></i>
+			</span>
+			Courses & certification</h2>
+
+		<div class="resume-wrap ftco-animate">
+			<span class="date">2022 – 2023 (6 Months)</span>
+			<h2>Full Stack Development</h2>
+			<p class="mt-2"> - Gained strong theoretical and practical knowledge in programming, databases,
+				networking, and web development. Built mini projects using Java, PHP, and MySQL.</p>
+			<p class="mt-2"> - Worked on front-end modules using HTML, CSS, and JavaScript.
+				Learned Git-based version control and collaborated in agile development environments.</p>
+		</div>
+	</div>
 
 
 	<section class="ftco-section" id="services-section">
@@ -319,211 +352,184 @@
 						creating scalable applications.</p>
 				</div>
 			</div>
-			<div class="row">
-				<!-- Frontend Skills -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>React</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100" style="width:95%">
-								<span>95%</span>
-							</div>
+			<section class="ftco-section" id="skills-section">
+				<div class="container">
+					<div class="row justify-content-center pb-5">
+						<div class="col-md-12 heading-section text-center ftco-animate">
+							<h1 class="big big-2">Skills</h1>
+							<h2 class="mb-4">What I Do</h2>
+							<p>Experienced in both frontend and backend development, specializing in modern web
+								technologies and creating scalable applications.</p>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Next.js</h3>
-						<div class="progress">
-							<div class="progress-bar color-7" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100" style="width:85%">
-								<span>85%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Redux</h3>
-						<div class="progress">
-							<div class="progress-bar color-8" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100" style="width:70%">
-								<span>70%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>JavaScript</h3>
-						<div class="progress">
-							<div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>TypeScript</h3>
-						<div class="progress">
-							<div class="progress-bar color-5" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-								aria-valuemax="100" style="width:75%">
-								<span>75%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Tailwind CSS</h3>
-						<div class="progress">
-							<div class="progress-bar color-9" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Backend Skills -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Node.js</h3>
-						<div class="progress">
-							<div class="progress-bar color-14" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:80%">
-								<span>80%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Express.js</h3>
-						<div class="progress">
-							<div class="progress-bar color-15" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:80%">
-								<span>80%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>MongoDB</h3>
-						<div class="progress">
-							<div class="progress-bar color-17" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:80%">
-								<span>80%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>HTML5</h3>
-						<div class="progress">
-							<div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100" style="width:95%">
-								<span>95%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>CSS3</h3>
-						<div class="progress">
-							<div class="progress-bar color-2" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>SASS</h3>
-						<div class="progress">
-							<div class="progress-bar color-3" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100" style="width:70%">
-								<span>70%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Material UI</h3>
-						<div class="progress">
-							<div class="progress-bar color-10" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Prime React</h3>
-						<div class="progress">
-							<div class="progress-bar color-11" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100" style="width:70%">
-								<span>70%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>jQuery</h3>
-						<div class="progress">
-							<div class="progress-bar color-13" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100" style="width:70%">
-								<span>70%</span>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>REST APIs</h3>
-						<div class="progress">
-							<div class="progress-bar color-16" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100" style="width:85%">
-								<span>85%</span>
-							</div>
-						</div>
-					</div>
-				</div>
+					<!-- Nav Tabs -->
+					<ul class="nav justify-content-center mb-4" id="skillsTabs" role="tablist" style="gap: 10px;">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="frontend-tab" data-bs-toggle="tab"
+								data-bs-target="#frontend" type="button" role="tab">Frontend</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="backend-tab" data-bs-toggle="tab" data-bs-target="#backend"
+								type="button" role="tab">Backend</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools"
+								type="button" role="tab">Tools & Platforms</button>
+						</li>
+					</ul>
 
-				<!-- Tools & Platforms -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Git</h3>
-						<div class="progress">
-							<div class="progress-bar color-18" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:80%">
-								<span>80%</span>
+					<!-- Tab Content -->
+					<div class="tab-content" id="skillsTabsContent">
+						<!-- Frontend -->
+						<div class="tab-pane fade show active" id="frontend" role="tabpanel">
+							<div class="row">
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>React</h3>
+										<div class="progress">
+											<div class="progress-bar color-6" style="width:95%"><span>95%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Next.js</h3>
+										<div class="progress">
+											<div class="progress-bar color-7" style="width:85%"><span>85%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Redux</h3>
+										<div class="progress">
+											<div class="progress-bar color-8" style="width:88%"><span>88%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>JavaScript</h3>
+										<div class="progress">
+											<div class="progress-bar color-4" style="width:90%"><span>90%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>TypeScript</h3>
+										<div class="progress">
+											<div class="progress-bar color-5" style="width:88%"><span>88%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Tailwind CSS</h3>
+										<div class="progress">
+											<div class="progress-bar color-9" style="width:90%"><span>90%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Material UI</h3>
+										<div class="progress">
+											<div class="progress-bar color-10" style="width:90%"><span>90%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Prime React</h3>
+										<div class="progress">
+											<div class="progress-bar color-11" style="width:90%"><span>90%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>HTML5</h3>
+										<div class="progress">
+											<div class="progress-bar color-1" style="width:95%"><span>95%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>CSS3 / SASS</h3>
+										<div class="progress">
+											<div class="progress-bar color-2" style="width:90%"><span>90%</span></div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Docker</h3>
-						<div class="progress">
-							<div class="progress-bar color-19" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100" style="width:70%">
-								<span>70%</span>
+
+						<!-- Backend -->
+						<div class="tab-pane fade" id="backend" role="tabpanel">
+							<div class="row">
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Node.js</h3>
+										<div class="progress">
+											<div class="progress-bar color-14" style="width:85%"><span>85%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Express.js</h3>
+										<div class="progress">
+											<div class="progress-bar color-15" style="width:85%"><span>85%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>MongoDB</h3>
+										<div class="progress">
+											<div class="progress-bar color-17" style="width:85%"><span>85%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>REST APIs</h3>
+										<div class="progress">
+											<div class="progress-bar color-16" style="width:85%"><span>85%</span></div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
+
+						<!-- Tools -->
+						<div class="tab-pane fade" id="tools" role="tabpanel">
+							<div class="row">
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Git</h3>
+										<div class="progress">
+											<div class="progress-bar color-18" style="width:85%"><span>85%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Docker</h3>
+										<div class="progress">
+											<div class="progress-bar color-19" style="width:75%"><span>75%</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
-			</div>
+			</section>
 		</div>
 	</section>
 
@@ -710,27 +716,34 @@
 				<div class="col-md-12 order-md-last d-flex">
 					<form id="contact-form" action="#" class="bg-light p-4 p-md-5 contact-form"
 						style="border-radius: 20px; background: transparent !important;">
-						<div class="form-group">
+
+						<div class="form-group mb-3">
 							<input type="text" name="name" class="form-control" placeholder="Your Name">
+							<small class="text-danger error-message" id="name-error"></small>
 						</div>
-						<div class="form-group">
+
+						<div class="form-group mb-3">
 							<input type="text" name="email" class="form-control" placeholder="Your Email">
+							<small class="text-danger error-message" id="email-error"></small>
 						</div>
-						<div class="form-group">
-							<textarea name="message" id="" cols="30" rows="7" class="form-control"
+
+						<div class="form-group mb-3">
+							<textarea name="message" cols="30" rows="7" class="form-control"
 								placeholder="Message"></textarea>
+							<small class="text-danger error-message" id="message-error"></small>
 						</div>
-						<div class="form-group">
+
+						<div class="form-group text-center">
 							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
 						</div>
 					</form>
-
 				</div>
+			</div>
 
-				<!-- <div class="col-md-6 d-flex">
+			<!-- <div class="col-md-6 d-flex">
 					<div class="img" style="background-image: url(images/profile2.png);"></div>
 				</div> -->
-			</div>
+		</div>
 		</div>
 	</section>
 
@@ -830,21 +843,55 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
 	<script src="js/main.js"></script>
-
 	<script>
+		// email 
 		document.getElementById("contact-form").addEventListener("submit", function (e) {
 			e.preventDefault();
 
 			const form = this;
+			const name = form.name.value.trim();
+			const email = form.email.value.trim();
+			const message = form.message.value.trim();
 
-			emailjs.sendForm("service_yiwkxre", "template_pnpr1tb", this)
+			// Clear previous errors
+			document.querySelectorAll(".error-message").forEach(el => el.textContent = "");
+
+			let isValid = true;
+
+			// Name validation
+			if (name === "") {
+				document.getElementById("name-error").textContent = "Please enter your name.";
+				isValid = false;
+			}
+
+			// Email validation
+			const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (email === "") {
+				document.getElementById("email-error").textContent = "Please enter your email.";
+				isValid = false;
+			} else if (!emailPattern.test(email)) {
+				document.getElementById("email-error").textContent = "Please enter a valid email address.";
+				isValid = false;
+			}
+
+			// Message validation
+			if (message === "") {
+				document.getElementById("message-error").textContent = "Please enter your message.";
+				isValid = false;
+			}
+
+			// Stop if validation fails
+			if (!isValid) return;
+
+			// Proceed with EmailJS send
+			emailjs.sendForm("service_yiwkxre", "template_pnpr1tb", form)
 				.then(function (response) {
 					console.log("SUCCESS!", response.status, response.text);
-					alert("✅ Email sent successfully!");
+					alert("Email sent successfully!");
 					form.reset();
 				}, function (error) {
 					console.error("FAILED...", error);
-					alert("❌ Failed to send email. Check console for details.");
+					alert("Failed to send email. Check console for details.");
 				});
 		});
 	</script>
