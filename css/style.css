@@ -14010,3 +14010,101 @@ textarea.form-control {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* Mobile Responsive Improvements */
+@media (max-width: 991.98px) {
+  .resume-wrap {
+    margin-bottom: 2rem;
+  }
+
+  .col-lg-6 {
+    margin-bottom: 1rem;
+  }
+
+  .heading-section h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .col-lg-4,
+  .col-lg-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .ftco-section {
+    padding: 3rem 0;
+  }
+
+  h1.big {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .resume-wrap h2 {
+    font-size: 1.2rem;
+  }
+
+  .progress-wrap h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Technical Skills Grid Alignment */
+.technical-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .technical-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Awards Section Alignment */
+.awards-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+@media (max-width: 991.98px) {
+  .awards-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* AI Tools Card Styling */
+.ai-tools-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.ai-tools-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2);
+}
+
+/* Resume Section Improvements */
+.resume-section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--warning);
+}
+
+.resume-section-header h3 {
+  margin: 0;
+  color: var(--warning);
+  font-weight: 600;
+}
+
