@@ -1,1152 +1,2030 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-	<title>Vijay Babu</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/aos.css">
-
-	<link rel="stylesheet" href="css/ionicons.min.css">
-
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="./images/favIcon.jpg" type="image/x-icon">
-	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-	<script>
-		(function () {
-			emailjs.init("YxBowvEEU5XWdvz0U"); // from EmailJS dashboard
-		})();
-		document.addEventListener("DOMContentLoaded", function () {
-			const tabs = document.querySelectorAll(".custom-tab");
-			const panes = document.querySelectorAll(".tab-pane");
-
-			tabs.forEach(tab => {
-				tab.addEventListener("click", () => {
-					// Remove active from all
-					tabs.forEach(t => t.classList.remove("active"));
-					panes.forEach(p => p.classList.remove("active"));
-
-					// Add to clicked tab and matching pane
-					tab.classList.add("active");
-					document.getElementById(tab.dataset.tab).classList.add("active");
-				});
-			});
-		});
-	</script>
-</head>
-
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Vijay <span style="color: var(--warning);">Babu</span></a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-					<!-- <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li> -->
-					<!-- <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li> -->
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<div class="slider-text d-md-none text-center mt-5">
-		<img src="./images/profile.jpeg"
-			style="width: 70%; height: 70%; border-radius:50%; object-fit: fill; border: 5px solid var(--warning);"
-			alt="Profile picture" />
-	</div>
-
-	<section id="home-section" class="ftco-about img ftco-section ftco-no-pb" id="about-section"
-		style="min-height: 80vh; display: flex; align-items: center; justify-content: center;">
-		<div class="container">
-			<div class="d-flex align-items-center justify-content-between" data-scrollax-parent="true">
-				<div class="profile-card d-flex align-items-center justify-content-center ftco-animate col-12 col-md-4"
-					data-scrollax=" properties: { translateY: '70%' }">
-					<div class="text">
-						<span style="color: var(--warning); font-size: 20px;">Hello!</span>
-						<h1 class="mb-4 mt-3"><b>I'm <span style="color: var(--warning);">Vijay Babu</span></b></h1>
-						<h2 class="mb-4">Software Developer</h2>
-						<p>
-							<a href="#" class="btn btn-primary py-3 px-4">Download CV</a>
-							<a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4">Contact</a>
-						</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate"><a href="https://github.com/VijayBabu47k" target="_blank"><span
-										class="icon-github"></span></a></li>
-							<li class="ftco-animate"><a href="https://medium.com/@vijay47k1" target="_blank"><span
-										class="icon-medium"></span></a></li>
-							<li class="ftco-animate"><a
-									href="https://www.linkedin.com/in/vijay-b-2b710325b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-									target="_blank"><span class="icon-linkedin"></span></a></li>
-					</div>
-				</div>
-				<div class="d-none slider-text d-md-block col-5">
-					<img src="./images/profile.jpeg"
-						style="width: 100%; height: 100%; border-radius:50%; object-fit: fill; border: 5px solid var(--warning);"
-						alt="Profile picture" />
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex">
-				<!-- <div class="col-md-6 col-lg-5 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/bg_1.png);">
-						</div>
-					</div>
-				</div> -->
-				<div class="col-md-6 col-lg-12 pl-lg-5 pb-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-							<p>
-								Software Engineer with <b class="text-white">3+ years of experience</b> in building <b class="text-white">scalable and high-performance</b> web
-								applications using <b class="text-white">Next.js, React and Node.js</b>. Skilled in developing
-								responsive, user-friendly interfaces and implementing robust backend solutions with REST APIs. Experienced in working with
-								<b class="text-white">MongoDB, PostgreSQL and MySQL</b>, along with advanced state management using <b class="text-white">Redux, RTK Query and TanStack Query</b>.
-								Proficient in writing <b class="text-white">comprehensive unit tests using Jest and Vitest</b>, and ensuring code quality with modern best practices. Passionate about delivering clean, maintainable code and continuously optimizing applications for performance.
-							</p>
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span>Vijay Babu</span></li>
-								<li class="d-flex"><span>Date of birth:</span> <span>October 24, 2002</span></li>
-								<li class="d-flex"><span>Address:</span> <span>No. 252 Road Street Melneathappakam,
-										Kalavai, Vellore</span></li>
-								<li class="d-flex"><span>Zip code:</span> <span>632-506</span></li>
-								<li class="d-flex"><span>Email:</span> <span>vijaybabu47k@gmail.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>+91 6383146724</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p class="mb-4">
-								<span class="number" data-number="12">0</span> +
-								<span>Project complete</span>
-							</p>
-							<p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Resume</h1>
-					<h2 class="mb-4">Resume</h2>
-					<p>Software Developer with a strong foundation in computer applications and hands-on experience in
-						building real-world web applications using modern technologies.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<!-- Work Experience -->
-				<div class="col-lg-6">
-					<div class="heading-section ftco-animate mb-4">
-						<h3 class="mb-4" style="color: var(--warning);">Work Experience</h3>
-					</div>
-
-					<div class="resume-wrap ftco-animate">
-						<span class="date">OCT 2024 - PRESENT</span>
-						<h2>Software Engineer</h2>
-						<span class="position">itTrident</span>
-						<p class="mt-4">Delivering enterprise-grade applications across aviation, non-profit, field service and transportation domains. Contributing to enterprise-grade applications using the MERN stack, focusing on performance optimization, code reviews and implementing best practices including unit testing with Jest.</p>
-						<div style="margin-top: 15px; font-size: 0.9rem;">
-							<p class="mb-2"><strong>Key Projects:</strong></p>
-							<ul style="margin-left: 20px; margin-bottom: 0;">
-								<li><strong>CAT:</strong> Test build visualization, Jenkins integration, JWT auth, Redis caching</li>
-								<li><strong>SCC:</strong> Student management, RBAC, Twilio integration, PDF/Excel reports</li>
-								<li><strong>NCPro:</strong> NCR lifecycle management, RCA, AWS S3, email notifications</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="resume-wrap ftco-animate">
-						<span class="date">AUG 2024 - SEP 2024</span>
-						<h2>Software Engineer</h2>
-						<span class="position">Foyer Technology</span>
-						<p class="mt-4">Led development of feature-rich CRM applications. Developed real-time chat, audio/video calling, and Outlook-like email functionalities. Implemented responsive cross-platform UI using Tailwind CSS and Material UI with Redux and RTK Query for state management.</p>
-					</div>
-				</div>
-
-				<!-- Education -->
-				<div class="col-lg-6">
-					<div class="heading-section ftco-animate mb-4">
-						<h3 class="mb-4" style="color: var(--warning);">Education</h3>
-					</div>
-
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2019 - 2022</span>
-						<h2>Bachelor of Computer Applications</h2>
-						<span class="position">Thiruvalluvar University</span>
-						<p class="mt-2"><strong>CGPA: 8.4</strong></p>
-						<p class="mt-2">Strong theoretical and practical knowledge in programming, databases, networking and web development with focus on modern software engineering practices.</p>
-					</div>
-
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2017 - 2019</span>
-						<h2>HSC | State Board</h2>
-						<span class="position">Govt Hr Sec School</span>
-						<p class="mt-2"><strong>Score: 78%</strong></p>
-						<p class="mt-2">Focused on Computer Science and Mathematics, developing foundational concepts in programming and problem-solving.</p>
-					</div>
-
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022 - 2023</span>
-						<h2>Full Stack Development Certification</h2>
-						<span class="position">Besant Technologies</span>
-						<p class="mt-4">6-month comprehensive certification covering frontend and backend technologies. Built multiple projects using JavaScript, React, Node.js, Express, and MySQL with focus on modern web development practices.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Download CV -->
-			<div class="row justify-content-center mt-5">
-				<div class="col-md-6 text-center ftco-animate">
-					<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Courses & Certification Section -->
-	<section class="ftco-section ftco-no-pb">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Courses</h1>
-					<h2 class="mb-4">Certification</h2>
-					<p>Professional certifications and continuous learning</p>
-				</div>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-md-8">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022 – 2023</span>
-						<h2>Full Stack Development Certification</h2>
-						<span class="position">Besant Technologies | 6 Months</span>
-						<p class="mt-4">Comprehensive certification covering:</p>
-						<ul style="margin-left: 20px;">
-							<li>Full-stack web development with modern technologies</li>
-							<li>Frontend: HTML5, CSS3, JavaScript, React</li>
-							<li>Backend: Node.js, Express.js, REST APIs</li>
-							<li>Databases: MySQL, MongoDB</li>
-							<li>Version Control: Git and collaborative development</li>
-							<li>Hands-on project development and deployment</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- AI Tools Exposure Section -->
-	<section class="ftco-section ftco-no-pb">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">AI Tools</h1>
-					<h2 class="mb-4">AI & Emerging Technologies</h2>
-					<p>Experience with modern AI tools and platforms</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<div class="box p-4 text-center ftco-animate" style="background: rgba(255, 193, 7, 0.1); border-radius: 10px; border-left: 4px solid var(--warning);">
-						<h3 class="mb-3">Bolt AI Web Builder</h3>
-						<p>Experience developing web applications using Bolt AI's visual web builder for rapid prototyping and development.</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-lg-4">
-					<div class="box p-4 text-center ftco-animate" style="background: rgba(255, 193, 7, 0.1); border-radius: 10px; border-left: 4px solid var(--warning);">
-						<h3 class="mb-3">Claude AI</h3>
-						<p>Hands-on experience with Claude AI for code generation, debugging, code reviews, and development assistance.</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 col-lg-4">
-					<div class="box p-4 text-center ftco-animate" style="background: rgba(255, 193, 7, 0.1); border-radius: 10px; border-left: 4px solid var(--warning);">
-						<h3 class="mb-3">Microsoft Copilot</h3>
-						<p>Used for code quality improvements, intelligent code suggestions, and comprehensive code reviews.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Awards & Recognition Section -->
-	<section class="ftco-section ftco-no-pb">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Awards</h1>
-					<h2 class="mb-4">Awards & Recognition</h2>
-					<p>Recognition for outstanding performance and dedication</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2024</span>
-						<h2>Best Performer</h2>
-						<span class="position">Foyer Technology</span>
-						<p class="mt-4">Recognized as the best performer for exceptional contributions to the CRM platform development and team collaboration.</p>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2026</span>
-						<h2>Dedicated Employee of the Year</h2>
-						<span class="position">itTrident</span>
-						<p class="mt-4">Awarded for outstanding dedication, performance optimization, comprehensive code reviews, and leading best practices implementation in enterprise applications.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="ftco-section" id="services-section">
-		<div class="container">
-			<div class="row justify-content-center py-5 mt-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Services</h1>
-					<h2 class="mb-4">Services</h2>
-					<p>I offer end-to-end web development services, focusing on performance, scalability and clean code
-						practices.</p>
-				</div>
-			</div>
-			<div class="row">
-				<!-- Web Design -->
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-analysis"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Web Design</h3>
-						</div>
-					</a>
-				</div>
-
-				<!-- Full-Stack Development -->
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Full-Stack Development</h3>
-						</div>
-					</a>
-				</div>
-
-				<!-- API Integration -->
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-idea"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">API Integration</h3>
-						</div>
-					</a>
-				</div>
-
-				<!-- Mobile App Development -->
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-flasks"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">App Development</h3>
-						</div>
-					</a>
-				</div>
-
-				<!-- Performance Optimization -->
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-ux-design"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Performance Optimization</h3>
-						</div>
-					</a>
-				</div>
-
-				<!-- Deployment & DevOps -->
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
-						<span class="icon">
-							<i class="flaticon-innovation"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Deployment & DevOps</h3>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section" id="skills-section">
-		<div class="container">
-					<div class="row justify-content-center pb-5">
-						<div class="col-md-12 heading-section text-center ftco-animate">
-							<h1 class="big big-2">Skills</h1>
-							<h2 class="mb-4">What I Do</h2>
-							<p>Experienced in both frontend and backend development, specializing in modern web
-								technologies and creating scalable applications.</p>
-						</div>
-					</div>
-
-					<ul class="nav justify-content-center mb-4 flex-wrap" id="skillsTabs" role="tablist" style="gap: 10px;">
-						<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="languages-tab" data-bs-toggle="tab"
-								data-bs-target="#languages" type="button" role="tab">Languages</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="frontend-tab" data-bs-toggle="tab"
-								data-bs-target="#frontend" type="button" role="tab">Frontend</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="backend-tab" data-bs-toggle="tab" data-bs-target="#backend"
-								type="button" role="tab">Backend</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="database-tab" data-bs-toggle="tab" data-bs-target="#database"
-								type="button" role="tab">Databases</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools"
-								type="button" role="tab">Tools & DevOps</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="integrations-tab" data-bs-toggle="tab" data-bs-target="#integrations"
-								type="button" role="tab">Integrations</button>
-						</li>
-					</ul>
-
-					<div class="tab-content" id="skillsTabsContent">
-
-						<!-- Languages -->
-						<div class="tab-pane fade show active" id="languages" role="tabpanel">
-							<div class="row">
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>JavaScript</h3>
-										<div class="progress">
-											<div class="progress-bar color-4" style="width:95%"><span>95%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>TypeScript</h3>
-										<div class="progress">
-											<div class="progress-bar color-5" style="width:90%"><span>90%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>HTML5</h3>
-										<div class="progress">
-											<div class="progress-bar color-1" style="width:95%"><span>95%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>CSS3 / SASS</h3>
-										<div class="progress">
-											<div class="progress-bar color-2" style="width:92%"><span>92%</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Frontend -->
-						<div class="tab-pane fade" id="frontend" role="tabpanel">
-							<div class="row">
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>React</h3>
-										<div class="progress">
-											<div class="progress-bar color-6" style="width:95%"><span>95%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Next.js</h3>
-										<div class="progress">
-											<div class="progress-bar color-7" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Redux</h3>
-										<div class="progress">
-											<div class="progress-bar color-8" style="width:88%"><span>88%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>JavaScript</h3>
-										<div class="progress">
-											<div class="progress-bar color-4" style="width:90%"><span>90%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>TypeScript</h3>
-										<div class="progress">
-											<div class="progress-bar color-5" style="width:88%"><span>88%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Tailwind CSS</h3>
-										<div class="progress">
-											<div class="progress-bar color-9" style="width:90%"><span>90%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Material UI</h3>
-										<div class="progress">
-											<div class="progress-bar color-10" style="width:90%"><span>90%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Prime React</h3>
-										<div class="progress">
-											<div class="progress-bar color-11" style="width:90%"><span>90%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>RTK Query</h3>
-										<div class="progress">
-											<div class="progress-bar color-3" style="width:88%"><span>88%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>TanStack Query</h3>
-										<div class="progress">
-											<div class="progress-bar color-12" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Ant Design</h3>
-										<div class="progress">
-											<div class="progress-bar color-27" style="width:88%"><span>88%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Bootstrap</h3>
-										<div class="progress">
-											<div class="progress-bar color-28" style="width:90%"><span>90%</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Backend -->
-						<div class="tab-pane fade" id="backend" role="tabpanel">
-							<div class="row">
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Node.js</h3>
-										<div class="progress">
-											<div class="progress-bar color-14" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Express.js</h3>
-										<div class="progress">
-											<div class="progress-bar color-15" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>REST APIs</h3>
-										<div class="progress">
-											<div class="progress-bar color-16" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Jest (Unit Testing)</h3>
-										<div class="progress">
-											<div class="progress-bar color-22" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Socket.io (Real-time)</h3>
-										<div class="progress">
-											<div class="progress-bar color-13" style="width:82%"><span>82%</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Tools -->
-						<div class="tab-pane fade" id="tools" role="tabpanel">
-							<div class="row">
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Git & GitHub</h3>
-										<div class="progress">
-											<div class="progress-bar color-18" style="width:90%"><span>90%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Docker</h3>
-										<div class="progress">
-											<div class="progress-bar color-19" style="width:80%"><span>80%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>GitHub Actions / CI-CD</h3>
-										<div class="progress">
-											<div class="progress-bar color-23" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>SonarQube / Code Quality</h3>
-										<div class="progress">
-											<div class="progress-bar color-24" style="width:80%"><span>80%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>AWS S3</h3>
-										<div class="progress">
-											<div class="progress-bar color-25" style="width:80%"><span>80%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Vitest / Jest Testing</h3>
-										<div class="progress">
-											<div class="progress-bar color-26" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Databases -->
-						<div class="tab-pane fade" id="database" role="tabpanel">
-							<div class="row">
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>MongoDB</h3>
-										<div class="progress">
-											<div class="progress-bar color-17" style="width:88%"><span>88%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>MySQL</h3>
-										<div class="progress">
-											<div class="progress-bar color-20" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>PostgreSQL</h3>
-										<div class="progress">
-											<div class="progress-bar color-21" style="width:82%"><span>82%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Redis (Caching)</h3>
-										<div class="progress">
-											<div class="progress-bar color-29" style="width:80%"><span>80%</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Integrations -->
-						<div class="tab-pane fade" id="integrations" role="tabpanel">
-							<div class="row">
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Razorpay Payment Gateway</h3>
-										<div class="progress">
-											<div class="progress-bar color-30" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Twilio (SMS / WhatsApp)</h3>
-										<div class="progress">
-											<div class="progress-bar color-31" style="width:88%"><span>88%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Google Maps API</h3>
-										<div class="progress">
-											<div class="progress-bar color-32" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box">
-									<div class="progress-wrap ftco-animate">
-										<h3>Nodemailer</h3>
-										<div class="progress">
-											<div class="progress-bar color-33" style="width:85%"><span>85%</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-		</div>
-	</section>
-
-	<!-- <section class="ftco-section ftco-project" id="projects-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 class="mb-4">Recent Projects</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/project-3.jpeg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><b>NCPro - Non Confirmation</b></h3>
-							<p class="text-white">Enterprise grade non confirmation management platform with advanced data processing and API workflows.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-8">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/project-5.png);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><b>SCC - Signature Chess Club</b></h3>
-							<p class="text-white">Built a maintainable system to manage students, track schedules and handle attendance efficiently.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/project-1.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><b>MFU - Mutual Fund Utility</b></h3>
-							<p class="text-white">Admin dashboard for API & version management. Consumers can integrate APIs effortlessly. Built using Next.js, RTK Query and Zod validations.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-								style="background-image: url(images/project-2.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center p-4">
-									<h3><b>Branding &amp; Illustration Design</b></h3>
-									<p class="text-white">Web Design</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- <section class="ftco-section" id="blog-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Blog</h1>
-					<h2 class="mb-4">Our Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="" class="block-20" style="background-image: url('images/image_1.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">June 21, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="" class="block-20" style="background-image: url('images/image_2.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">June 21, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="" class="block-20" style="background-image: url('images/image_3.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">June 21, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Get in Touch</h2>
-					<p>If you have any questions or just want to say hello, feel free to reach out!</p>
-				</div>
-			</div>
-
-			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-map-signs"></span>
-						</div>
-						<h3 class="mb-4">Address</h3>
-						<p>No. 252 Road Street Melneathappakam, Kalavai, Vellore</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<h3 class="mb-4">Contact Number</h3>
-						<p><a href="tel://6383146724">+91 6383146724</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<h3 class="mb-4">Email Address</h3>
-						<p><a href="mailto:vijaybabu47k@gmail.com">vijaybabu47k@gmail.com</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-globe"></span>
-						</div>
-						<h3 class="mb-4">Website</h3>
-						<p><a href="#">vijaybabu.site</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row no-gutters block-9">
-				<div class="col-md-12 order-md-last d-flex">
-					<form id="contact-form" action="#" class="bg-light p-4 p-md-5 contact-form"
-						style="border-radius: 20px; background: transparent !important;">
-
-						<div class="form-group mb-3">
-							<input type="text" name="name" class="form-control" placeholder="Your Name">
-							<small class="text-danger error-message" id="name-error"></small>
-						</div>
-
-						<div class="form-group mb-3">
-							<input type="text" name="email" class="form-control" placeholder="Your Email">
-							<small class="text-danger error-message" id="email-error"></small>
-						</div>
-
-						<div class="form-group mb-3">
-							<textarea name="message" cols="30" rows="7" class="form-control"
-								placeholder="Message"></textarea>
-							<small class="text-danger error-message" id="message-error"></small>
-						</div>
-
-						<div class="form-group text-center">
-							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-						</div>
-					</form>
-				</div>
-			</div>
-
-			<!-- <div class="col-md-6 d-flex">
-					<div class="img" style="background-image: url(images/profile2.png);"></div>
-				</div> -->
-		</div>
-		</div>
-	</section>
-
-
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">About</h2>
-						<p>Software Developer | 3+ years of experience in building scalable web apps. Passionate about
-							delivering high performance, maintainable code.</p>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-							<li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a>
-							</li>
-							<li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a>
-							</li>
-							<li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Skills</a>
-							</li>
-							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Services</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Full-Stack Development</a>
-							</li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>API Integration</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>App Development</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Performance Optimization</a>
-							</li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Deployment & DevOps</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><span class="icon icon-map-marker"></span><span class="text">No. 252 Road Street
-										Melneathappakam,
-										Kalavai, Vellore</span></li>
-								<li><a href="tel://6383146724"><span class="icon icon-phone"></span>+91 6383146724</a>
-								</li>
-								<li><a href="mailto:vijaybabu47k@gmail.com"><span
-											class="icon icon-envelope"></span>vijaybabu47k@gmail.com</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p>
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> <span
-							style="color: var(--warning);">Vijay Babu</span> | All rights reserved
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	<script src="js/main.js"></script>
-	<script>
-		// email 
-		document.getElementById("contact-form").addEventListener("submit", function (e) {
-			e.preventDefault();
-
-			const form = this;
-			const name = form.name.value.trim();
-			const email = form.email.value.trim();
-			const message = form.message.value.trim();
-
-			// Clear previous errors
-			document.querySelectorAll(".error-message").forEach(el => el.textContent = "");
-
-			let isValid = true;
-
-			// Name validation
-			if (name === "") {
-				document.getElementById("name-error").textContent = "Please enter your name.";
-				isValid = false;
-			}
-
-			// Email validation
-			const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-			if (email === "") {
-				document.getElementById("email-error").textContent = "Please enter your email.";
-				isValid = false;
-			} else if (!emailPattern.test(email)) {
-				document.getElementById("email-error").textContent = "Please enter a valid email address.";
-				isValid = false;
-			}
-
-			// Message validation
-			if (message === "") {
-				document.getElementById("message-error").textContent = "Please enter your message.";
-				isValid = false;
-			}
-
-			// Stop if validation fails
-			if (!isValid) return;
-
-			// Proceed with EmailJS send
-			emailjs.sendForm("service_yiwkxre", "template_pnpr1tb", form)
-				.then(function (response) {
-					console.log("SUCCESS!", response.status, response.text);
-					alert("Email sent successfully!");
-					form.reset();
-				}, function (error) {
-					console.error("FAILED...", error);
-					alert("Failed to send email. Check console for details.");
-				});
-		});
-	</script>
-</body>
-
+  <head>
+    <title>Vijay Babu | Software Engineer | React, Node.js, MERN Stack</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Vijay Babu - Software Engineer with 3+ years of experience building scalable web applications using React, Node.js, Next.js, MongoDB, and the MERN stack. Based in Chennai, India."
+    />
+    <meta
+      name="keywords"
+      content="Vijay Babu, Software Engineer, MERN Stack, React Developer, Node.js Developer, Software Engineer, Chennai, India, Web Developer, Portfolio"
+    />
+    <meta name="author" content="Vijay Babu" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://vijaybabu.site/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vijay Babu | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software Engineer with 3+ years building scalable web apps using React, Node.js, and the MERN stack."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vijaybabu.site/" />
+    <meta
+      property="og:image"
+      content="https://vijaybabu.site/images/profile.jpeg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vijay Babu | Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer with 3+ years building scalable web apps."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/premium.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vijay Babu",
+        "jobTitle": "Software Engineer",
+        "url": "https://vijaybabu.site",
+        "email": "vijaybabu47k@gmail.com",
+        "telephone": "+916383146724",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Vellore",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/VijayBabu47k",
+          "https://www.linkedin.com/in/vijaybabu.dev"
+        ],
+        "knowsAbout": [
+          "React",
+          "Node.js",
+          "Next.js",
+          "MongoDB",
+          "TypeScript",
+          "JavaScript",
+          "REST APIs",
+          "MERN Stack"
+        ]
+      }
+    </script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("YxBowvEEU5XWdvz0U");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- LOADER -->
+    <div id="page-loader">
+      <div class="loader-content">
+        <div class="loader-spinner"></div>
+        <span class="loader-text">VB</span>
+      </div>
+    </div>
+
+    <!-- CURSOR -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg fixed-top"
+        id="main-navbar"
+        role="navigation"
+        aria-label="Main navigation"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#home-section">
+            <span class="brand-icon">&lt;/&gt;</span>
+            <span class="brand-text">Vijay Babu</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon"
+              ><span></span><span></span><span></span
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home-section">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills-section">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume-section">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services-section">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
+            </ul>
+            <div class="nav-actions ms-lg-4 d-flex align-items-center gap-3">
+              <a
+                href="https://github.com/VijayBabu47k"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-social-link"
+                aria-label="GitHub Profile"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" class="btn btn-primary btn-download-cv ml-2"
+                ><i class="fas fa-download me-2 mx-2"></i>Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home-section" class="hero-section" aria-label="Introduction">
+        <div class="hero-bg-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="hero-grid-pattern"></div>
+        </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div
+              class="col-lg-6"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div class="hero-content">
+                <span class="hero-greeting">Hi, I'm</span>
+                <h1 class="hero-name">Vijay Babu</h1>
+                <h2 class="hero-title">Software Engineer</h2>
+                <p class="hero-description">
+                  I build scalable, high-performance web applications with
+                  modern technologies and clean code.
+                </p>
+                <div class="hero-cta">
+                  <a
+                    href="#services-section"
+                    class="btn btn-primary btn-lg btn-hero"
+                    >View My Work <i class="fas fa-arrow-right ms-2"></i
+                  ></a>
+                  <a
+                    href="#contact-section"
+                    class="btn btn-outline-primary btn-lg btn-hero"
+                    ><i class="fas fa-envelope me-2"></i> Contact Me</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 d-none d-lg-block"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                  <div class="hero-image-ring"></div>
+                  <div class="hero-image-glow"></div>
+                  <img
+                    src="./images/profile.jpeg"
+                    alt="Vijay Babu - Software Engineer"
+                    class="hero-image"
+                    width="380"
+                    height="420"
+                    loading="eager"
+                  />
+                </div>
+                <div
+                  class="hero-code-card"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-filename">developer.js</span>
+                  </div>
+                  <pre
+                    class="code-content"
+                  ><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">'Vijay Babu'</span>,
+  <span class="code-prop">role</span>: <span class="code-string">'Software Engineer'</span>,
+  <span class="code-prop">passion</span>: <span class="code-string">'Building impactful
+              solutions'</span>,
+  <span class="code-prop">code</span>: [<span class="code-string">'Clean'</span>, <span class="code-string">'Scalable'</span>,
+         <span class="code-string">'Efficient'</span>]
+};</code></pre>
+                </div>
+                <div class="hero-badge" data-aos="zoom-in" data-aos-delay="800">
+                  <span class="badge-number">3+</span>
+                  <span class="badge-text">Years<br />Experience</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-lg-none text-center mb-4 order-first">
+              <div class="hero-image-mobile">
+                <div class="hero-image-ring-mobile"></div>
+                <img
+                  src="./images/profile.jpeg"
+                  alt="Vijay Babu - Software Engineer"
+                  class="hero-image-sm"
+                  width="180"
+                  height="180"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT OVERVIEW -->
+      <section
+        class="overview-section"
+        id="about-section"
+        aria-label="About Overview"
+      >
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Who I Am</span>
+            <h2 class="section-title">About Me</h2>
+          </div>
+          <div class="row g-4 mt-2">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="overview-card">
+                <div class="overview-card-header">
+                  <i class="fas fa-user-circle"></i>
+                  <h3>ABOUT ME</h3>
+                </div>
+                <p>
+                  Software Developer with <strong>3+ years</strong> of
+                  experience building scalable, enterprise-grade web
+                  applications. I enjoy solving problems and turning ideas into
+                  real-world solutions.
+                </p>
+                <div class="overview-details">
+                  <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i
+                    ><span>Chennai, India</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-envelope"></i
+                    ><span>vijaybabu47k@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="overview-card">
+                <div class="overview-card-header">
+                  <i class="fas fa-briefcase"></i>
+                  <h3>EXPERIENCE & EDUCATION</h3>
+                </div>
+                <div class="timeline-mini">
+                  <div class="timeline-mini-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-mini-content">
+                      <h4>Software Developer</h4>
+                      <span class="timeline-company"
+                        >itTrident | Oct 2024 - Present</span
+                      >
+                      <p>
+                        Working on enterprise applications using MERN stack,
+                        REST APIs and unit testing.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-mini-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-mini-content">
+                      <h4>Bachelor of Computer Applications</h4>
+                      <span class="timeline-company"
+                        >Thiruvalluvar University | 2019 - 2022</span
+                      >
+                      <p>CGPA: 8.4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="overview-card">
+                <div class="overview-card-header">
+                  <i class="fas fa-code"></i>
+                  <h3>KEY PROJECTS</h3>
+                </div>
+                <div class="project-mini-list">
+                  <div class="project-mini-item">
+                    <div class="project-mini-icon">
+                      <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="project-mini-content">
+                      <h4>CAT - Automated Test Builds</h4>
+                      <p>Visualization of automated test builds.</p>
+                    </div>
+                  </div>
+                  <div class="project-mini-item">
+                    <div class="project-mini-icon">
+                      <i class="fas fa-chess-knight"></i>
+                    </div>
+                    <div class="project-mini-content">
+                      <h4>Signature Chess Club</h4>
+                      <p>Chess academy scheduling & WhatsApp Integration.</p>
+                    </div>
+                  </div>
+                  <div class="project-mini-item">
+                    <div class="project-mini-icon">
+                      <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="project-mini-content">
+                      <h4>NCPro - Non Conformance</h4>
+                      <p>Root cause analysis & UI enhancements.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Detail Card -->
+          <div class="row justify-content-center mt-5">
+            <div class="col-lg-10" data-aos="fade-up">
+              <div class="about-content-card">
+                <p>
+                  Software Engineer with
+                  <strong>3+ years of experience</strong> in building
+                  <strong>scalable and high-performance</strong> web
+                  applications using
+                  <strong>Next.js, React and Node.js</strong>. Skilled in
+                  developing responsive, user-friendly interfaces and
+                  implementing robust backend solutions with REST APIs.
+                  Experienced in working with
+                  <strong>MongoDB, PostgreSQL and MySQL</strong>, along with
+                  advanced state management using
+                  <strong>Redux, RTK Query and TanStack Query</strong>.
+                  Proficient in writing
+                  <strong>comprehensive unit tests using Jest and Vitest</strong
+                  >, and ensuring code quality with modern best practices.
+                </p>
+                <div class="about-info-grid">
+                  <div class="about-info-item">
+                    <span class="info-label">Name</span
+                    ><span class="info-value">Vijay Babu</span>
+                  </div>
+                  <div class="about-info-item">
+                    <span class="info-label">Date of Birth</span
+                    ><span class="info-value">October 24, 2002</span>
+                  </div>
+                  <div class="about-info-item">
+                    <span class="info-label">Address</span
+                    ><span class="info-value">No. 252, Kalavai, Vellore</span>
+                  </div>
+                  <div class="about-info-item">
+                    <span class="info-label">Zip Code</span
+                    ><span class="info-value">632-506</span>
+                  </div>
+                  <div class="about-info-item">
+                    <span class="info-label">Email</span
+                    ><span class="info-value">vijaybabu47k@gmail.com</span>
+                  </div>
+                  <div class="about-info-item">
+                    <span class="info-label">Phone</span
+                    ><span class="info-value">+91 6383146724</span>
+                  </div>
+                </div>
+                <div class="about-counter">
+                  <div class="counter-item">
+                    <span class="counter-number" data-number="15">0</span
+                    ><span class="counter-plus">+</span
+                    ><span class="counter-label">Projects Completed</span>
+                  </div>
+                  <div class="counter-item">
+                    <span class="counter-number" data-number="3">0</span
+                    ><span class="counter-plus">+</span
+                    ><span class="counter-label">Years Experience</span>
+                  </div>
+                  <div class="counter-item">
+                    <span class="counter-number" data-number="2">0</span
+                    ><span class="counter-label">Awards Won</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section
+        class="skills-section"
+        id="skills-section"
+        aria-label="Skills and Technologies"
+      >
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Expertise</span>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">
+              Experienced in frontend and backend development, specializing in
+              modern web technologies.
+            </p>
+          </div>
+          <div
+            class="skills-tabs-wrapper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <ul
+              class="nav skills-tab-nav justify-content-center flex-wrap"
+              id="skillsTabs"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="languages-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#languages"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  Languages
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="ai-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#ai"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  AI & LLM
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="frontend-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#frontend"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Frontend
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="backend-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#backend"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Backend
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="database-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#database"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Databases
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="mobile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#mobile"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Mobile Dev
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="tools-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tools"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Tools & DevOps
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="integrations-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#integrations"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Integrations
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content mt-5" id="skillsTabsContent">
+              <div
+                class="tab-pane fade show active"
+                id="languages"
+                role="tabpanel"
+              >
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>JavaScript</span><span>95%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 95%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>TypeScript</span><span>90%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>HTML5</span><span>95%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 95%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>CSS3 / SASS</span><span>92%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 92%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Dart</span><span>72%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 72%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="frontend" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>React</span><span>95%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 95%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Next.js</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Redux</span><span>88%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 88%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Tailwind CSS</span><span>90%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Material UI</span><span>90%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Prime React</span><span>90%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>RTK Query</span><span>88%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 88%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>TanStack Query</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Ant Design</span><span>88%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 88%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Bootstrap</span><span>90%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="backend" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Node.js</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Express.js</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>REST APIs</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Jest (Unit Testing)</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Socket.io (Real-time)</span><span>82%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 82%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="database" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>MongoDB</span><span>88%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 88%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>MySQL</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>PostgreSQL</span><span>82%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 82%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Redis (Caching)</span><span>80%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 80%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tools" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Git & GitHub</span><span>90%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Docker</span><span>80%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 80%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>GitHub Actions / CI-CD</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>SonarQube / Code Quality</span><span>80%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 80%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>AWS S3</span><span>80%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 80%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Vitest / Jest Testing</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="integrations" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Razorpay Payment Gateway</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Twilio (SMS / WhatsApp)</span><span>88%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 88%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Google Maps API</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Nodemailer</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="mobile" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>React Native</span><span>88%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 88%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Flutter</span><span>75%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 75%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Dart</span><span>72%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 72%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Expo</span><span>80%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 80%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Mobile UI/UX</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>App Store Deployment</span><span>78%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 78%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ai" role="tabpanel">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>RAG (Retrieval Augmented Generation)</span
+                        ><span>82%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 82%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Agentic AI</span><span>80%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 80%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Prompt Engineering</span><span>88%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 88%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>OpenAI API</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>Claude AI / Anthropic</span><span>85%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 85%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="skill-bar-item">
+                      <div class="skill-info">
+                        <span>LangChain / AI Agents</span><span>78%</span>
+                      </div>
+                      <div class="skill-progress">
+                        <div
+                          class="skill-progress-fill"
+                          style="--skill-width: 78%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section
+        class="resume-section"
+        id="resume-section"
+        aria-label="Work Experience and Education"
+      >
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">My Journey</span>
+            <h2 class="section-title">Experience & Education</h2>
+            <p class="section-subtitle">
+              Software Developer with a strong foundation in computer
+              applications and hands-on experience in building real-world web
+              applications.
+            </p>
+          </div>
+          <div class="row g-5 mt-4">
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="resume-column">
+                <h3 class="resume-column-title">
+                  <i class="fas fa-briefcase"></i> Work Experience
+                </h3>
+                <div class="resume-item">
+                  <div class="resume-date">OCT 2024 - PRESENT</div>
+                  <h4 class="resume-role">Software Developer</h4>
+                  <span class="resume-company">iTTrident</span>
+                  <p>Contributing to enterprise grade applications using the MERN stack. Responsible for performance optimization, code reviews and implementation of best practices like unit testing with Jest.</p>
+                  <div class="resume-highlights">
+                    <p class="mb-2"><strong>Key Projects:</strong></p>
+                    <ul>
+                      <li><strong>CAT:</strong> Worked on application which efficiently handles visualization of automated test builds</li>
+                      <li><strong>NCPro:</strong> Worked on implementing features like Root cause analysis and other UI enhancements in a non-conformance tracking application using React</li>
+                      <li><strong>Signature Chess Club:</strong> Designed an application to handle schedules for a chess academy. Worked on complex modules like schedules, WhatsApp communication etc.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="resume-item">
+                  <div class="resume-date">JUN 2023 - OCT 2024</div>
+                  <h4 class="resume-role">Software Developer</h4>
+                  <span class="resume-company">Foyer Tech</span>
+                  <p>Worked on full-stack projects using React, Next.js, Node.js and MongoDB. Built reusable components, REST APIs and collaborated in Agile teams.</p>
+                  <div class="resume-highlights">
+                    <p class="mb-2"><strong>Key Projects:</strong></p>
+                    <ul>
+                      <li><strong>ERP System:</strong> Built responsive and accessible UI components using React.js, MUI and Redux. Integrated customer data APIs ensuring smooth cross-module communication.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="resume-column">
+                <h3 class="resume-column-title">
+                  <i class="fas fa-graduation-cap"></i> Education
+                </h3>
+                <div class="resume-item">
+                  <div class="resume-date">2019 - 2022</div>
+                  <h4 class="resume-role">Bachelor of Computer Applications</h4>
+                  <span class="resume-company">Thiruvalluvar University</span>
+                  <p>
+                    <strong>CGPA: 8.4</strong> &mdash; Strong foundation in
+                    programming, databases, networking and web development.
+                  </p>
+                </div>
+                <div class="resume-item">
+                  <div class="resume-date">2017 - 2019</div>
+                  <h4 class="resume-role">HSC | State Board</h4>
+                  <span class="resume-company">Govt Hr Sec School</span>
+                  <p>
+                    <strong>Score: 78%</strong> &mdash; Computer Science and
+                    Mathematics focus.
+                  </p>
+                </div>
+                <div class="resume-item">
+                  <div class="resume-date">2022 - 2023</div>
+                  <h4 class="resume-role">
+                    Full Stack Development Certification
+                  </h4>
+                  <span class="resume-company">Besant Technologies</span>
+                  <p>
+                    6-month comprehensive certification covering JavaScript,
+                    React, Node.js, Express, and MySQL.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5" data-aos="fade-up">
+            <a href="#" class="btn btn-primary btn-lg btn-hero"
+              ><i class="fas fa-download me-2"></i> Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section
+        class="services-section"
+        id="services-section"
+        aria-label="Services Offered"
+      >
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">What I Offer</span>
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">
+              End-to-end web development services focusing on performance,
+              scalability and clean code.
+            </p>
+          </div>
+          <div class="row g-4 mt-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-card">
+                <div class="service-icon"><i class="fas fa-palette"></i></div>
+                <h4>Web Design</h4>
+                <p>
+                  Beautiful, responsive web interfaces with modern design
+                  principles.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card">
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h4>Full-Stack Development</h4>
+                <p>
+                  End-to-end apps using React, Next.js, Node.js, and modern
+                  databases.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card">
+                <div class="service-icon"><i class="fas fa-plug"></i></div>
+                <h4>API Integration</h4>
+                <p>
+                  Seamless third-party integrations: payments, messaging, cloud
+                  storage.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4>App Development</h4>
+                <p>Cross-platform mobile apps with React Native.</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h4>Performance Optimization</h4>
+                <p>Profiling, lazy loading, caching, and code splitting.</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-card">
+                <div class="service-icon"><i class="fas fa-server"></i></div>
+                <h4>Deployment & DevOps</h4>
+                <p>CI/CD pipelines, Docker, and GitHub Actions deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AWARDS -->
+      <section class="awards-section-wrap" aria-label="Awards and Recognition">
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Recognition</span>
+            <h2 class="section-title">Awards & Recognition</h2>
+            <p class="section-subtitle">
+              Recognition for outstanding performance and dedication
+            </p>
+          </div>
+          <div class="row g-4 mt-5 justify-content-center">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="award-card award-gold">
+                <div class="award-icon-premium">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <div class="award-year">2024</div>
+                <h4>Best Performer</h4>
+                <span class="award-org">Foyer Technology</span>
+                <p>
+                  Recognized as the best performer for exceptional contributions
+                  to the CRM platform development.
+                </p>
+                <div class="award-shine"></div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="award-card award-platinum">
+                <div class="award-icon-premium">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="award-year">2026</div>
+                <h4>Dedicated Employee of the Year</h4>
+                <span class="award-org">itTrident</span>
+                <p>
+                  Awarded for outstanding dedication, performance optimization,
+                  and leading best practices.
+                </p>
+                <div class="award-shine"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="certification-section" aria-label="Certifications">
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Credentials</span>
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">
+              Professional certifications and continuous learning
+            </p>
+          </div>
+          <div class="row justify-content-center mt-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="cert-card">
+                <div class="cert-badge"><i class="fas fa-layer-group"></i></div>
+                <div class="cert-content">
+                  <div class="cert-date">2022 - 2023</div>
+                  <h4>Full Stack Development Certification</h4>
+                  <span class="cert-issuer"
+                    >Besant Technologies | 6 Months</span
+                  >
+                  <ul class="cert-list">
+                    <li>Full-stack web development with modern technologies</li>
+                    <li>Frontend: HTML5, CSS3, JavaScript, React</li>
+                    <li>Backend: Node.js, Express.js, REST APIs</li>
+                    <li>Databases: MySQL, MongoDB</li>
+                    <li>Version Control: Git and collaborative development</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="cert-card">
+                <div class="cert-badge"><i class="fas fa-mobile-alt"></i></div>
+                <div class="cert-content">
+                  <div class="cert-date">2026</div>
+                  <h4>Flutter App Development</h4>
+                  <span class="cert-issuer">Simplilearn</span>
+                  <ul class="cert-list">
+                    <li>Flutter & Dart fundamentals</li>
+                    <li>Cross-platform mobile app development</li>
+                    <li>State management & navigation</li>
+                    <li>Firebase integration & deployment</li>
+                    <li>Building production-ready mobile applications</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI TOOLS -->
+      <section class="ai-tools-section" aria-label="AI Tools Experience">
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Innovation</span>
+            <h2 class="section-title">AI & Emerging Technologies</h2>
+            <p class="section-subtitle">
+              Experience with modern AI tools and platforms
+            </p>
+          </div>
+          <div class="row g-4 mt-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="ai-card">
+                <div class="ai-card-icon"><i class="fas fa-bolt"></i></div>
+                <h4>Bolt AI Web Builder</h4>
+                <p>
+                  Experience developing web applications using Bolt AI's visual
+                  web builder for rapid prototyping.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="ai-card">
+                <div class="ai-card-icon"><i class="fas fa-brain"></i></div>
+                <h4>Claude AI</h4>
+                <p>
+                  Hands-on experience with Claude AI for code generation,
+                  debugging, and code reviews.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="ai-card">
+                <div class="ai-card-icon"><i class="fas fa-robot"></i></div>
+                <h4>Microsoft Copilot</h4>
+                <p>
+                  Used for code quality improvements, intelligent suggestions,
+                  and comprehensive code reviews.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        class="contact-section"
+        id="contact-section"
+        aria-label="Contact Information"
+      >
+        <div class="container">
+          <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">
+              If you have any questions or just want to say hello, feel free to
+              reach out!
+            </p>
+          </div>
+          <div class="row g-4 mt-4">
+            <div class="col-lg-4" data-aos="fade-right">
+              <div class="contact-info-cards">
+                <div class="contact-info-card">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h5>Address</h5>
+                    <p>No. 252 Road Street Melneathappakam, Kalavai, Vellore</p>
+                  </div>
+                </div>
+                <div class="contact-info-card">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <h5>Phone</h5>
+                    <p><a href="tel://6383146724">+91 6383146724</a></p>
+                  </div>
+                </div>
+                <div class="contact-info-card">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h5>Email</h5>
+                    <p>
+                      <a href="mailto:vijaybabu47k@gmail.com"
+                        >vijaybabu47k@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-info-card">
+                  <div class="contact-info-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div>
+                    <h5>Website</h5>
+                    <p><a href="#">vijaybabu.site</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8" data-aos="fade-left">
+              <form id="contact-form" class="contact-form-card">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="contactName"
+                        placeholder="Your Name"
+                        autocomplete="name"
+                      /><label for="contactName">Your Name</label
+                      ><small
+                        class="text-danger error-message"
+                        id="name-error"
+                      ></small>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        id="contactEmail"
+                        placeholder="Your Email"
+                        autocomplete="email"
+                      /><label for="contactEmail">Your Email</label
+                      ><small
+                        class="text-danger error-message"
+                        id="email-error"
+                      ></small>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        name="message"
+                        class="form-control"
+                        id="contactMessage"
+                        placeholder="Your Message"
+                        style="height: 180px"
+                      ></textarea
+                      ><label for="contactMessage">Your Message</label
+                      ><small
+                        class="text-danger error-message"
+                        id="message-error"
+                      ></small>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg w-100 btn-submit"
+                    >
+                      <span class="btn-text mx-2">Send Message</span
+                      ><i class="fas fa-paper-plane ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-section" role="contentinfo">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <div class="footer-brand">
+                <a href="#home-section" class="footer-logo"
+                  ><span class="brand-icon">&lt;/&gt;</span
+                  ><span>Vijay Babu</span></a
+                >
+                <p>
+                  Software Developer | 3+ years of experience in building
+                  scalable web apps.
+                </p>
+              </div>
+              <div>
+                <div class="footer-social my-3">
+                  <a
+                    href="https://github.com/VijayBabu47k"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/vijaybabu.dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    href="https://medium.com/@vijaybabu47k"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Medium"
+                    ><i class="fab fa-medium"></i
+                  ></a>
+                  <a href="mailto:vijaybabu47k@gmail.com" aria-label="Email"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                </div>
+                <p>
+                  Let's build
+                  <span class="text-gradient">something great</span> together!
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <h5 class="footer-title">Quick Links</h5>
+              <ul class="footer-links">
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#resume-section">Experience</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <h5 class="footer-title">Services</h5>
+              <ul class="footer-links">
+                <li><a href="#services-section">Web Design</a></li>
+                <li><a href="#services-section">Full-Stack Development</a></li>
+                <li><a href="#services-section">API Integration</a></li>
+                <li><a href="#services-section">App Development</a></li>
+                <li>
+                  <a href="#services-section">Performance Optimization</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <h5 class="footer-title">Contact Info</h5>
+              <ul class="footer-contact">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i
+                  ><span>No. 252, Kalavai, Vellore</span>
+                </li>
+                <li>
+                  <a href="tel://6383146724"
+                    ><i class="fas fa-phone"></i>+91 6383146724</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:vijaybabu47k@gmail.com"
+                    ><i class="fas fa-envelope"></i>vijaybabu47k@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <span class="text-primary-custom">Vijay Babu</span> | All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 50,
+      });
+      window.addEventListener("load", function () {
+        var l = document.getElementById("page-loader");
+        setTimeout(function () {
+          l.classList.add("loaded");
+          document.body.classList.add("loaded");
+        }, 800);
+      });
+      (function () {
+        var c = document.querySelector(".custom-cursor"),
+          d = document.querySelector(".custom-cursor-dot");
+        if (window.innerWidth > 992) {
+          document.addEventListener("mousemove", function (e) {
+            c.style.left = e.clientX + "px";
+            c.style.top = e.clientY + "px";
+            d.style.left = e.clientX + "px";
+            d.style.top = e.clientY + "px";
+          });
+          document
+            .querySelectorAll(
+              "a, button, .service-card, .ai-card, .award-card, .overview-card",
+            )
+            .forEach(function (el) {
+              el.addEventListener("mouseenter", function () {
+                c.classList.add("cursor-hover");
+                d.classList.add("cursor-hover");
+              });
+              el.addEventListener("mouseleave", function () {
+                c.classList.remove("cursor-hover");
+                d.classList.remove("cursor-hover");
+              });
+            });
+        }
+      })();
+      (function () {
+        var n = document.getElementById("main-navbar");
+        window.addEventListener("scroll", function () {
+          var s = window.scrollY;
+          if (s > 50) {
+            n.classList.add("scrolled");
+          } else {
+            n.classList.remove("scrolled");
+          }
+          document.querySelectorAll("section[id]").forEach(function (sec) {
+            var t = sec.offsetTop - 100,
+              id = sec.getAttribute("id");
+            if (s >= t && s < t + sec.offsetHeight) {
+              document.querySelectorAll(".nav-link").forEach(function (lk) {
+                lk.classList.remove("active");
+                if (lk.getAttribute("href") === "#" + id)
+                  lk.classList.add("active");
+              });
+            }
+          });
+          var b = document.getElementById("scroll-top");
+          if (s > 500) {
+            b.classList.add("visible");
+          } else {
+            b.classList.remove("visible");
+          }
+        });
+      })();
+      document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener("click", function (e) {
+          e.preventDefault();
+          var t = document.querySelector(this.getAttribute("href"));
+          if (t) {
+            window.scrollTo({
+              top: t.getBoundingClientRect().top + window.scrollY - 80,
+              behavior: "smooth",
+            });
+            var nc = document.getElementById("navbarNav");
+            if (nc.classList.contains("show")) {
+              var bs = bootstrap.Collapse.getInstance(nc);
+              if (bs) bs.hide();
+            }
+          }
+        });
+      });
+      document
+        .getElementById("scroll-top")
+        .addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      (function () {
+        var o = new IntersectionObserver(
+          function (e) {
+            e.forEach(function (en) {
+              if (en.isIntersecting) {
+                en.target
+                  .querySelectorAll(".counter-number")
+                  .forEach(function (c) {
+                    var tg = parseInt(c.getAttribute("data-number")),
+                      cu = 0,
+                      st = tg / 125;
+                    (function u() {
+                      cu += st;
+                      if (cu < tg) {
+                        c.textContent = Math.floor(cu);
+                        requestAnimationFrame(u);
+                      } else {
+                        c.textContent = tg;
+                      }
+                    })();
+                  });
+                o.unobserve(en.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
+        var cs = document.querySelector(".about-counter");
+        if (cs) o.observe(cs);
+      })();
+      (function () {
+        var o = new IntersectionObserver(
+          function (e) {
+            e.forEach(function (en) {
+              if (en.isIntersecting) en.target.classList.add("animate");
+            });
+          },
+          { threshold: 0.3 },
+        );
+        document.querySelectorAll(".skill-bar-item").forEach(function (b) {
+          o.observe(b);
+        });
+        document.querySelectorAll("#skillsTabs button").forEach(function (tab) {
+          tab.addEventListener("shown.bs.tab", function () {
+            var p = document.querySelector(tab.getAttribute("data-bs-target"));
+            p.querySelectorAll(".skill-bar-item").forEach(function (b) {
+              b.classList.remove("animate");
+              void b.offsetWidth;
+              b.classList.add("animate");
+            });
+          });
+        });
+      })();
+      (function () {
+        var el = document.querySelector(".code-content code");
+        if (!el) return;
+        var h = el.innerHTML;
+        el.innerHTML = "";
+        var i = 0,
+          tag = false,
+          buf = "";
+        function t() {
+          if (i >= h.length) return;
+          var c = h[i];
+          if (c === "<") {
+            tag = true;
+            buf = "<";
+            i++;
+            t();
+            return;
+          }
+          if (tag) {
+            buf += c;
+            if (c === ">") {
+              tag = false;
+              el.innerHTML += buf;
+              buf = "";
+            }
+            i++;
+            t();
+            return;
+          }
+          el.innerHTML += c;
+          i++;
+          setTimeout(t, 20);
+        }
+        setTimeout(t, 1500);
+      })();
+      (function () {
+        var t = document.querySelector(".navbar-toggler");
+        if (t)
+          t.addEventListener("click", function () {
+            t.classList.toggle("active");
+          });
+      })();
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          var f = this,
+            n = f.name.value.trim(),
+            em = f.email.value.trim(),
+            m = f.message.value.trim();
+          document.querySelectorAll(".error-message").forEach(function (el) {
+            el.textContent = "";
+          });
+          var v = true;
+          if (n === "") {
+            document.getElementById("name-error").textContent =
+              "Please enter your name.";
+            v = false;
+          }
+          var ep = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (em === "") {
+            document.getElementById("email-error").textContent =
+              "Please enter your email.";
+            v = false;
+          } else if (!ep.test(em)) {
+            document.getElementById("email-error").textContent =
+              "Please enter a valid email address.";
+            v = false;
+          }
+          if (m === "") {
+            document.getElementById("message-error").textContent =
+              "Please enter your message.";
+            v = false;
+          }
+          if (!v) return;
+          var btn = f.querySelector(".btn-submit");
+          btn.classList.add("loading");
+          btn.disabled = true;
+          emailjs.sendForm("service_yiwkxre", "template_pnpr1tb", f).then(
+            function () {
+              btn.classList.remove("loading");
+              btn.disabled = false;
+              alert("Email sent successfully!");
+              f.reset();
+            },
+            function (err) {
+              btn.classList.remove("loading");
+              btn.disabled = false;
+              alert("Failed to send email.");
+              console.error("FAILED...", err);
+            },
+          );
+        });
+      window.addEventListener("scroll", function () {
+        var s = window.scrollY;
+        document
+          .querySelectorAll(".hero-bg-shapes .shape")
+          .forEach(function (sh, i) {
+            sh.style.transform = "translateY(" + s * (i + 1) * 0.03 + "px)";
+          });
+      });
+    </script>
+  </body>
 </html>
