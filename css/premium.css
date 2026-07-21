@@ -44,6 +44,8 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -255,6 +257,13 @@ strong {
   font-family: var(--font-mono);
   font-weight: 700;
   box-shadow: var(--shadow-primary);
+}
+
+.navbar-logo {
+  height: 40px;
+  max-width: 150px;
+  object-fit: contain;
+  display: block;
 }
 
 .navbar-nav .nav-link {
@@ -2033,12 +2042,14 @@ strong {
   visibility: hidden;
   transform: translateY(20px);
   z-index: 999;
+  pointer-events: none;
 }
 
 .scroll-top-btn.visible {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  pointer-events: auto;
 }
 
 .scroll-top-btn:hover {
@@ -2117,11 +2128,13 @@ strong {
     align-items: center;
     justify-content: space-between !important;
     gap: 16px;
+    padding-left: 12px;
   }
 
   .navbar-brand {
     flex: 1;
     min-width: 0;
+    padding-left: 8px;
   }
 
   .navbar-toggler {
@@ -2150,6 +2163,10 @@ strong {
 
   .btn-hero {
     width: 100%;
+  }
+
+  .btn-text {
+    font-size: 0.95rem;
   }
 
   .section-title {

@@ -79,7 +79,7 @@
         },
         "sameAs": [
           "https://github.com/VijayBabu47k",
-          "https://www.linkedin.com/in/vijaybabu.dev"
+          "https://www.linkedin.com/in/vijaybabu-dev"
         ],
         "knowsAbout": [
           "React",
@@ -1656,7 +1656,7 @@
                       class="btn btn-primary btn-lg w-100 btn-submit"
                     >
                       <span class="btn-text mx-2">Send Message</span
-                      ><i class="fas fa-paper-plane ms-2"></i>
+                      ><i class="btn-text fas fa-paper-plane ms-2"></i>
                     </button>
                   </div>
                 </div>
@@ -1693,7 +1693,7 @@
                     ><i class="fab fa-github"></i
                   ></a>
                   <a
-                    href="https://www.linkedin.com/in/vijaybabu.dev"
+                    href="https://www.linkedin.com/in/vijaybabu-dev"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
@@ -1961,10 +1961,16 @@
       })();
       (function () {
         var t = document.querySelector(".navbar-toggler");
-        if (t)
+        var nc = document.getElementById("navbarNav");
+        if (t) {
           t.addEventListener("click", function () {
             t.classList.toggle("active");
           });
+          // Remove active class when menu is closed
+          nc.addEventListener("hidden.bs.collapse", function () {
+            t.classList.remove("active");
+          });
+        }
       })();
       document
         .getElementById("contact-form")
